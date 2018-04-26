@@ -1,5 +1,6 @@
 package br.com.caelum.ingresso.model;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 import javax.persistence.Entity;
@@ -33,7 +34,7 @@ public class Sessao {
 		this.sala = sala;
 	}
 	
-	public LocalTime getHorarioTermin() {
+	public LocalTime getHorarioTermino() {
 		return this.horario.plusMinutes(filme.getDuracao().toMinutes());
 	}
 	
